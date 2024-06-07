@@ -296,9 +296,9 @@ const Products = () => {
                       )}
                       {(selectedProduct && selectedProduct.id === product.id && (cartQuantity[selectedProduct.id] || 0) > 0) && (<>
                         <div className="flex items-baseline">
-                          <button className="bg-bgbtn text-white w-full py-1 px-3 rounded-xl" onClick={handleDecrement}>-</button>
+                          <button className="bg-[#163300] text-white w-full py-1 px-3 rounded-xl" onClick={handleDecrement}>-</button>
                           <p className="px-5">{cartQuantity[selectedProduct.id]}</p>
-                          <button className="bg-bgbtn text-white w-full py-1 px-3 rounded-xl" onClick={handleIncrement}>+</button>
+                          <button className="bg-[#163300] text-white w-full py-1 px-3 rounded-xl" onClick={handleIncrement}>+</button>
                           </div>
                         </>)}
                       </div>
